@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Full-Stack Login Application
 
-## Getting Started
+This is a full-stack authentication system built with **Next.js**, **React**, **TypeScript**, **Prisma**, and **React Query**. It includes a secure login and registration system with proper validation, API routes, and database integration.
 
-First, run the development server:
+## 🏗️ Project Structure
 
+The project follows a modular structure:
+
+### 📂 Frontend
+- `app/` - Next.js app router pages
+- `components/` - Reusable UI components
+- `hooks/` - Custom React hooks
+- `lib/` - Utility functions and helpers
+
+### 📂 Backend
+- `app/api/` - API routes for authentication
+- `prisma/` - Prisma schema and database configuration
+
+---
+
+## 🛠️ Tech Stack
+
+### 🌐 Frontend
+- **Next.js** (App Router)
+- **TypeScript**
+- **React Hook Form** (Form handling)
+- **Zod** (Schema validation)
+- **React Query** (State management & caching)
+- **Tailwind CSS** (Styling)
+
+### ⚙️ Backend
+- **Next.js API Routes**
+- **Prisma ORM** (Database management)
+- **PostgreSQL**
+- **bcryptjs** (Password hashing)
+
+---
+
+## 🚀 Setup Instructions
+
+### 1️⃣ Clone the Repository
 ```bash
+git clone https://github.com/HimanshuJ16/login-app-nextjs.git
+cd login-app-nextjs
+```
+### 2️⃣ Install Dependencies
+Navigate to the project directory and install the necessary dependencies:   
+```
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3️⃣ Set Up Environment Variables
+Create a **.env.local** file in the root of your project and add the following environment variables:
+```
+DATABASE_URL="your_postgresql_connection_url"
+```
+
+### 4️⃣ Configure the Database
+Run Prisma migrations:
+```
+npx prisma migrate dev --name init
+```
+
+### 5️⃣ Start the Development Server
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Now, visit http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✅ Features
+🔐 User authentication (Sign-up, login, logout)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Form validation with React Hook Form & Zod
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔑 Secure password hashing using bcryptjs
 
-## Learn More
+📡 API routes for authentication with Prisma
 
-To learn more about Next.js, take a look at the following resources:
+⚡ Optimistic UI updates with React Query
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎨 Fully responsive UI using Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙏 Acknowledgements
+##### ✔️ Next.js
+##### ✔️ React
+##### ✔️ TypeScript
+##### ✔️ Prisma
+##### ✔️ React Query
+##### ✔️ React Hook Form
+##### ✔️ Zod
+##### ✔️ Tailwind CSS
+##### ✔️ bcryptjs
+##### ✔️ And all the amazing open-source contributors!
